@@ -11,7 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Istok+Web&family=Karla&family=Kenia&family=Libre+Barcode+128+Text&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Istok+Web&family=Karla&family=Kenia&family=Libre+Barcode+128+Text&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../css/index.css">
   <title>Music_player</title>
 </head>
@@ -37,9 +39,15 @@
             <a href="#" class="player-nav__link">STORE</a>
           </li>
         </ul>
+        
+        <div class="nav-btn">
+          <span class="nav-btn__line"></span>
+          <span class="nav-btn__line"></span>
+          <span class="nav-btn__line"></span>
+        </div>
       </nav>
       <div class="player-header__descr">
-        <div class="descr_wrapper">
+        <div class="descr-wrapper">
           <p class="descr__title">MUSIC
             PLAYER</p>
           <p class="descr__text">American company formed in 2002 in Boston, Massachusetts</p>
@@ -50,7 +58,7 @@
       </div>
     </div>
   </header>
-  <main class="main-page">
+  <!--<main class="main-page">
     <section class="music">
       <div class="page__wrapper">
         <h1 class="main-page__title">Music</h1>
@@ -65,6 +73,7 @@
         </div>
       </div>
     </section>
+
     <section class="about">
       <div class="page__wrapper">
         <h1 class="main-page__title">About</h1>
@@ -76,6 +85,7 @@
         </div>
       </div>
     </section>
+
     <section class="store">
       <div class="page__wrapper">
         <h1 class="main-page__title main-page__title">Store</h1>
@@ -90,19 +100,15 @@
                 <button class="download__button download__button--light">Download
                   MacOS</button>
               </li>
-              <li class="descr-item__list-inner">
-                <ul class="descr-list-inner">
-                  <li class="item-inner__text item-inner__text--bold">Нужна предыдущая версия MPlayer?
-                  </li>
-                  <li class="item-inner__text ">
-                    <p class="item-inner__text--regular">Вы можете скачать одну из предыдущих версий MPlayer, которая
-                      совместима с нужной вам версией операционной системы и определёнными устройствами.</br>
-                      <a href="#" class="item-inner__text--link">Выберите предыдущую версию MPlayer</a>
-                    </p>
-                  </li>
-                </ul>
-            </li>
             </ul>
+            <div class="descr-list-inner">
+              <p class="item-inner__text item-inner__text--bold">Нужна предыдущая версия MPlayer?
+              </p>
+              <p class="item-inner__text item-inner__text--regular">Вы можете скачать одну из предыдущих версий MPlayer, которая совместима с нужной вам версией операционной системы и определёнными устройствами.</p>
+                  <p class="item-inner__text"><a href="#" class="item-inner__text--link">Выберите предыдущую версию MPlayer</a>
+                </p>
+              </p>
+            </div>
           </div>
           <div class="store__descr-img store__descr-img--max">
             <img class="store__img" src="../img/Device .svg" alt="Device">
@@ -113,58 +119,69 @@
         </div>
       </div>
     </section>
-  </main>
+  </main>-->
   <!--/* FOOTER */-->
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__menu">
+        <div class="footer__menu-btn">
+          MORE>>>
+        </div>
         <ul class="footer__list">
           <li class="footer__item">
             <ul class="footer__item-list">
-              <li class="footer__item-record"><a class="footer__link--title" href="#">MPlayer Store</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Варианты оплаты</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Состояние заказа</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Помощь при покупке</a></li>
-            </ul>
-          </li>
-          <li class="footer__item-menu">
-          </li>
-          <li class="footer__item">
-            <ul>
-              <li class="footer__item-record"><a class="footer__link--title" href="#">Ценности MPlayer</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Универсальный доступ</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Окружающая среда</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Конфиденциальность</a></li>
+              <li class="footer__item-title"><a class="footer__link--title" href="#">MPlayer Store</a>
+                <ul class="footer__item-submenu">
+                  <li class="footer__item-record"><a class="footer__link" href="#">Варианты оплаты</a></li>
+                  <li class="footer__item-record"><a class="footer__link" href="#">Состояние заказа</a></li>
+                  <li class="footer__item-record"><a class="footer__link" href="#">Помощь при покупке</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="footer__item">
-            <ul>
-              <li class="footer__item-record"><a class="footer__link--title" href="#">Учётная запись</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Управление вашим MPlayer ID</a></li>
-              <li class="footer__item-record"><a class="footer__link" href="#">Учётная запись MPlayer Store</a></li>
+            <!--<input class="footer__item-ac2" type="checkbox" checked>-->
+            <ul class="footer__item-list">
+              <li class="footer__item-title"><a class="footer__link--title" href="#">Ценности MPlayer</a>
+
+                <ul class="footer__item-submenu">
+                  <li class="footer__item-record"><a class="footer__link" href="#">Универсальный доступ</a></li>
+                  <li class="footer__item-record"><a class="footer__link" href="#">Окружающая среда</a></li>
+                  <li class="footer__item-record"><a class="footer__link" href="#">Конфиденциальность</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__item">
+            <ul class="footer__item-list">
+              <li class="footer__item-title"><a class="footer__link--title" href="#">Учётная запись</a>
+                <ul class="footer__item-submenu">
+                  <li class="footer__item-record"><a class="footer__link" href="#">Управление вашим MPlayer ID</a></li>
+                  <li class="footer__item-record"><a class="footer__link" href="#">Учётная запись MPlayer Store</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
         </ul>
       </div>
       <div class="footer__conditions">
         <div class="footer-descr__title">
-          <a class="footer__link-logo" href="#">MUSIC PLAYER </a>
+          <p class="logo__wrapper"><a class="footer__link-logo" href="#">MUSIC <br> PLAYER </a></p>
+          <p class="footer__link footer__link--descr">
+            © MPlayer Inc., 2022 г. Все права защищены.
+          </p>
         </div>
         <ul class="footer__descr-list">
-          <li class = "footer__link">
-            © MPlayer Inc., 2022 г. <br> Все права защищены.
-          </li>
           <li class="footer__condition">
             <a class="footer__link" href="#">Условия использования</a>
           </li>
-          <li class="footer__condition"><a class="footer__link"  href="#">Продажа и возврат</a></li>
+          <li class="footer__condition"><a class="footer__link" href="#">Продажа и возврат</a></li>
           <li class="footer__condition"><a class="footer__link" href="#">Юридическая информация</a></li>
         </ul>
       </div>
     </div>
   </footer>
-
-
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

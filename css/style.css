@@ -3,6 +3,9 @@
   min-height: 900px;
   background-image: linear-gradient(180deg, #EDA418 47.4%, rgba(237, 164, 24, 0.00) 100%);
 }
+.container-header{
+  margin: 0 auto;
+}
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -42,6 +45,7 @@
 }
 .navigation_button-img {
 }
+
 .container-page-header {
   display: flex;
   padding-top: 25px;
@@ -145,12 +149,7 @@
   justify-content: center;
 
 }
-.footer__item {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: black;
-}
+
 .item__link {
 }
 .footer__text {
@@ -199,6 +198,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  gap:27px;
 
 }
 .player-nav {
@@ -209,6 +209,7 @@
   gap:190px;
   padding-left: 7px;
 }
+
 .player-logo {
 
 }
@@ -238,17 +239,37 @@
   font-weight: 400;
   line-height: normal;
 }
+.nav-btn{
+  display: block;
+  height: 26px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  display: none;
+  cursor:pointer;
+}
+
+.nav-btn__line {
+  display: block;
+  height: 4px;
+  border-radius: 20%;
+  background: #fff;
+  width: 100%;
+}
 .player-header__descr {
   display: flex;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  gap:338px;
+  justify-content: space-between;
 }
 .descr-wrapper {
   display: flex;
   flex-direction: column;
-
 }
 .descr__title {
   padding-top: 164px;
@@ -384,7 +405,7 @@
 .page-wrapper {
   margin: 0 auto;
   max-width: 1440px;
-  max-height: 1024px;
+  max-height: 100vh;
   padding: 83px 0 170px 122px;
 
   }
@@ -396,13 +417,13 @@
   width: 100%;
   padding-top: 51px;
   display: flex;
-  height: 100%;
+  height: 100vh;
   justify-content: flex-start;
 
   
 }
 .store__descr-img {
-  width: 1168px;
+  max-width: 1168px;
   max-height: 685px;
   position: absolute;
   left: 317px;
@@ -418,7 +439,9 @@
 .store__descr {
   display: flex;
   flex-direction: column;
-  width:456px;
+  justify-content: center;
+  gap:135px;
+  max-width:456px;
   position: relative;
 }
 .download__button {
@@ -451,15 +474,16 @@
 }
 
 .descr-list-inner {
-  /*margin-top: 92px;*/
   max-width: 431px;
   text-align: center;
   color: #FFF;
   font-family: Montserrat;
-  position: absolute;
+  /*position: absolute;*/
   left: 0;
 }
 .item-inner__text {
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   font-weight: 400;
   width: 431px;
@@ -467,15 +491,24 @@
 .item-inner__text--bold {
   font-weight: 600;
   font-size: 21px;
+  padding-bottom: 17px;
 }
 .item-inner__text--regular {
   line-height: normal;
 }
 
 .item-inner__text--link {
-  color: rgba(4, 4, 4, 0.70);
+  color: rgba(4, 4, 4, 0.80);
+  text-decoration: underline;
 }
-
+.item-inner__text--link:visited {
+  color: rgba(4, 4, 4, 0.80);
+  text-decoration: underline;
+}
+.item-inner__text--link:hover{
+  color: rgba(4, 4, 4, 0.80);
+  text-decoration: underline;
+}
 /*FOOTER*/
 
 .footer {
@@ -495,38 +528,55 @@
 .footer__menu {
 
   padding-left: 342px;
+  padding-right: 62px;
   display: flex;
 
 
 }
 .footer__item {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: #FFF;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 600;
+  width: auto;
+  white-space:nowrap;
+  
 }
 .footer__list {
   padding-top: 0;
   gap:147px;
   line-height: 1.8;
+  flex-wrap:nowrap;
 
 }
 .footer__item-record {
-
+  display: block;
+}
+.footer__item-ac2 {
+  position: absolute;
+  left:0;
+  right:auto;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /*opacity: 0;*/
 }
 .footer__item-record--title{
 
 }
 .footer__conditions{
   display: flex;
-  flex-direction: column;
-  /*gap:10px;*/
+  align-items: flex-end;
+  gap:99px;
 }
 .footer-descr__title{
   display: block;
-  width: 138px;
-  height: 100px;
+  max-width: 350px;
+  max-height: 128px;
   padding-bottom: 0;
   line-height: 43px;
   color: #FFF;
@@ -536,6 +586,7 @@
   font-weight: 400;
 }
 .footer__link-logo{
+
 }
 .footer__descr-list {
   display: flex;
@@ -548,15 +599,24 @@
   font-size: 16px;
   font-weight: 400;
 }
-
-
-.footer__link {
+.footer__link--title {
+  color: #FFF;
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
-.footer__item-menu {
+
+.footer__link{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__menu-btn {
   display: none;
 }
+
+
