@@ -46,7 +46,6 @@
     padding-top: 60px;
   }
 
-
   /*FOOTER*/
   .footer__container{
     max-height: 536px;
@@ -70,7 +69,15 @@
   }
 
 }
-
+@media only screen and (max-height:600px) {
+  /*HEADER*/
+  .container-header {
+    gap:0;
+  }
+  .descr__text {
+    padding-top: 0;
+  }
+}
 @media only screen and (max-width:850px){
     /*HEADER*/
 .descr__img-iPhone{
@@ -261,6 +268,19 @@
   .player-header__descr {
     flex-direction: row;
 }
+@media only screen and (max-height:360px) {
+  /*HEADER*/
+  .player-header__descr {
+    flex-direction: row;
+}
+  .container-header {
+    padding: 10px 10px 0 50px;
+    gap:0;
+  }
+  .player-logo__link {
+    font-size: 50px;
+  }
+}
 }
 @media only screen and (max-width:410px) {
   /*HEADER*/
@@ -342,7 +362,7 @@
 }
 
 }
-@media only screen and (max-width:359px) {
+@media only screen and (max-width:360px) {
   
   
   .footer__item-submenu {
