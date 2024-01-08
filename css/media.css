@@ -20,7 +20,27 @@
   .descr__text{
     padding-top: 150px;
   }
+  /*Music*/
+  .content__img {
+    position: absolute;
+    top:-127px;
+  }
+  .music-img {
+    width: 70vw;
+    height: auto;
+    position: relative;
+    left: 0;
+
+  }
+  .music-content {
+    height: 70vh;
+  }
+  .music__descr{
+    justify-content: flex-start;
+  }
+
 }
+
 @media only screen and (max-width:1040px){
     /*HEADER*/
   .container-header {
@@ -45,7 +65,23 @@
   .descr__text {
     padding-top: 60px;
   }
-
+/*MUSIC*/
+  .music-content {
+    height: 70vh;
+  }
+  .music__descr {
+    gap: 50px;
+  }
+  .music__button {
+    width: 25vw;
+    height: 7vh;
+  }
+  .music__link {
+    font-size: 2em;
+  }
+  .content__img {
+    top: -85px;
+  }
   /*FOOTER*/
   .footer__container{
     max-height: 536px;
@@ -69,6 +105,27 @@
   }
 
 }
+@media only screen and (max-height:800px) {
+  /*HEADER*/
+  .container-header {
+    gap:0;
+  }
+
+}
+
+@media only screen and (min-height:600px) {
+  /*HEADER*/
+  .descr__img-iPhone {
+    max-height: 82vh;
+  }
+  .music-content {
+    gap: 15vh;
+  }
+  .content__img {
+    top: -35px;
+  }
+
+}
 @media only screen and (max-height:600px) {
   /*HEADER*/
   .container-header {
@@ -77,6 +134,17 @@
   .descr__text {
     padding-top: 0;
   }
+  /*MUSIC*/
+  .page__wrapper {
+    gap: 5vh;
+}
+  .content__img {
+    top: -45px;
+  }
+  .music__link {
+    font-size: .8em;
+    padding-top: 2px;
+}
 }
 @media only screen and (max-width:850px){
     /*HEADER*/
@@ -91,12 +159,36 @@
 .player-header__descr {
   justify-content: flex-start;
 }
+/*Music*/
+.music-content {
+  flex-direction:column;
+  align-items: center;
+  gap:40px;
+}
+.music__descr {
+  flex-direction:row;
+  align-items: center;
+  gap:40px;
+}
+.music__link {
+  font-size: 1.5em;
+}
+/*FOOTER*/
 .footer__menu-btn {
   display: none;
 }
 }
 @media only screen and (max-width:768px){
-    /*FOOTER*/
+  /*Music*/
+  .music__link {
+    font-size: 1.2em;
+    padding-top: .9vh;
+  }
+  .music-content {
+    gap: 8vh;
+}
+
+  /*FOOTER*/
   .footer__container{
     padding-top: 40px;
   }
@@ -144,24 +236,23 @@
     .footer__item-submenu{
     display: none;
   }
- 
     .footer__item-title:hover .footer__link--title::after{
       transform: rotate(90deg);
-    }
+  }
     .footer__item-submenu {
       height: auto;
       width: 230px;
       border: 1px solid #D53005;
       border-radius: 25px;
-    }
+  }
   
     .footer__item-title:hover .footer__item-submenu{
       padding: 5px 25px;
       display: block;
-      }
+  }
       .footer__item-record:hover {
       color:#EDA61D;
-      }
+  }
   .footer-list--open{
     transform: translateX(0%);
     transition:transform 2s ease;
@@ -213,6 +304,7 @@
 .descr__img-iPhone {
   max-width: 280px;
 }
+
 /*FOOTER*/
 .footer__descr-list {
   gap: 10px;
@@ -249,6 +341,23 @@
   margin: 0;
   max-width: 100%;
 }
+/*MUSIC*/
+.music__descr {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.music__button {
+  height: 6vh;
+}
+.music__link{
+  font-size: .9em;
+  padding-top: .9vh;
+}
+/* MUSIC*/
+.music__button {
+  width: 60vw;
+}
   /*FOOTER*/
   .footer__link--title {
     font-size: 14px;
@@ -268,6 +377,23 @@
   .player-header__descr {
     flex-direction: row;
 }
+  /*MUSIC*/
+  .page__wrapper {
+    padding: 10px 0 100px 5px;
+}
+.main-page__title {
+  padding-left: 0;
+}
+.music__descr {
+  gap: 7px;
+}
+  .music__button {
+    height: 10vh;
+}
+.content__img{
+  top:-35px;
+}
+}
 @media only screen and (max-height:360px) {
   /*HEADER*/
   .player-header__descr {
@@ -280,7 +406,7 @@
   .player-logo__link {
     font-size: 50px;
   }
-}
+
 }
 @media only screen and (max-width:410px) {
   /*HEADER*/
@@ -326,6 +452,7 @@
 .descr__text {
   height: 15px;
 }
+
 /*FOOTER*/
 .footer__container{
   padding: 15px 10px;
@@ -356,6 +483,7 @@
 .descr__img{
   padding-top: 1.5em;
 }
+
 /*FOOTER*/
 .footer__menu-btn{
   font-size: 0.6em;
@@ -378,37 +506,9 @@
     font-size:8px; 
   } 
 }
-  /*
 
-  .music-content {
-    flex-direction: column;
-    gap:15px;
-    /*position: static;*/
-  
-  /* MAIN-PAGE */
-/* Секция Music */
-/*.page__wrapper {
-  gap:20px;
-}
-  .music__descr {
-    flex-direction:row;
-    align-items: center;
-    gap:40px;
-  }
-  .music__button{
-    width: 253px;
-    height: 75px;
-  }
-  .music__link {
-    font-size: 30px;
-  }
-  .music-img {
-    width: 720px;
-    top: 50px;
-    right: 0;
-    left:auto;
 
-  }
+/
   /* Секция About */
   /*.about__content {
     padding: 20% 50px;
