@@ -378,10 +378,15 @@
 .page__wrapper {
   margin: 0 auto;
   max-width: 1440px;
-  max-height: 1024px;
+  height: 100vh;
+  justify-content: center;
+  
 }
 .about__content {
-  padding: 415px 196px 476px 275px;
+  max-width: 100%;
+  max-height: auto;
+  margin: auto;
+ 
 }
 .about__descr {
   max-width: 969px;
@@ -392,6 +397,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  
 }
 
 /* Секция Store */

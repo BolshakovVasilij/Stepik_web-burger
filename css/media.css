@@ -38,7 +38,6 @@
   .music__descr{
     justify-content: flex-start;
   }
-
 }
 
 @media only screen and (max-width:1040px){
@@ -65,6 +64,9 @@
   .descr__text {
     padding-top: 60px;
   }
+  .descr__img {
+    padding-top: 0;
+  }
 /*MUSIC*/
   .music-content {
     height: 70vh;
@@ -82,6 +84,18 @@
   .content__img {
     top: -85px;
   }
+  /*ABOUT*/
+  .about__descr {
+    max-width: 70vw;
+    height: 72px;
+    color: #FFF;
+    font-family: Karla;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
   /*FOOTER*/
   .footer__container{
     max-height: 536px;
@@ -103,6 +117,7 @@
   .footer__descr-list {
     gap:50px;
   }
+ 
 
 }
 @media only screen and (max-height:800px) {
@@ -186,6 +201,9 @@
   }
   .music-content {
     gap: 8vh;
+}
+.main-page__title{
+  padding-left: 0px;
 }
 
   /*FOOTER*/
@@ -304,7 +322,10 @@
 .descr__img-iPhone {
   max-width: 280px;
 }
-
+/*ABOUT*/
+.about__descr {
+  font-size: 1.3em;
+}
 /*FOOTER*/
 .footer__descr-list {
   gap: 10px;
@@ -393,6 +414,9 @@
 .content__img{
   top:-35px;
 }
+.content__img {
+  top: -55px;
+}
 }
 @media only screen and (max-height:360px) {
   /*HEADER*/
@@ -452,7 +476,10 @@
 .descr__text {
   height: 15px;
 }
-
+/*MUSIC*/
+.content__img {
+  top: -30px;
+}
 /*FOOTER*/
 .footer__container{
   padding: 15px 10px;
@@ -490,9 +517,12 @@
 }
 
 }
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:320px) {
   
-  
+  /*ABOUT*/
+  .about__descr {
+    font-size: 1em;
+  }
   .footer__item-submenu {
     width: 130px;
     white-space: wrap;
@@ -508,15 +538,8 @@
 }
 
 
-/
-  /* Секция About */
-  /*.about__content {
-    padding: 20% 50px;
-  }
-  .about__descr {
-    padding-left: 53px;
-    max-width: 750px;
-  }
+
+  
   /* Секция Store */
   /*.page__wrapper{
   max-width: 900px;
@@ -559,266 +582,3 @@
   .descr-item__download{
     max-width: 30%;
   }**/
-
-
-/*@media only screen and (max-width:1000px)
-  .container-header {
-    padding:20px 5px 0 30px;
-
-  }
-*/
-
-
-@media only screen and (max-width:992px){
-
-
-/* Секция Music 
-.music__link {
-  padding-top: 10px;;
-  font-size: 20px;
-}
-.music__button {
-  max-width: 150px;
-  max-height: 45px;
-}
-.music__descr {
-  gap: 130px;
-}
-  /* Секция About 
-  .about__descr {
-    font-size: 24px;
-  }
-/* Секция Store 
-.download__button {
-  font-size: 13px;
-}
-.item-inner__text--bold{
-  font-size: 16px;
-}
-.item-inner__text{
-  font-size: 14px;
-}
-
-.descr-list-inner{
-  padding-left: 20px;
-}
-.store__descr-img--max{
-  max-width:500px;
-  top:225px;
-}
-.download__button {
-  width: 182px;
-}
-  /*FOOTER
-.footer__link{
-  font-size: 12px;
-  line-height: 1.3;
-
-}
-.footer__link--title{
-  font-size: 15px;
-}
-.footer__descr-list>.footer__link {
-  font-size:10px;
-  width: 160px;
-}
-.footer__descr-list {
-  gap: 20px;
-}
-.footer__condition>.footer__link {
-  font-size: 10px;
-}
-}
-/*@media only screen and (max-width:768px){
-  
-
-Секция Music
-.main-page__title{
-  padding-left: 25px;
-}
-.music-img{
-  max-width:600px;
-}
-
-  /* Секция About 
-  .about__content{
-    padding: 50% 20px;
-
-  }
-  .about__descr {
-    font-size: 18px;
-    padding-left: 0px;
-  }
-/* Секция Store 
-.store__descr {
-
-}
-.item-inner__text {
-  display: none;
-  max-width: 160px;
-}
-.descr-item__list-inner{
-  max-width: 130px;
-}
-.item-inner__text--bold {
-  display: block;
-
-}
-.store__descr-list{
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  height: 140px;
-  max-width: 100%;
-  padding-right:100px;
-}
-.descr-list-inner {
-  left:3%;
-  right: auto;
-  align-items: left;
-  width:130px;
-  max-width: 130px;
-}
-.store__descr-img--max{
-  display: none;
-}
-.store__descr-img--min{
-  display: block;
-  max-width: 220px;
-  position: static;
-  margin: 0 auto;
-}
-.download__button  {
-  width:100px;
-}
-
-
-}*/
-@media only screen and (max-width:576px){
-
-  /* Header 
-  .container-header{
-    padding: 10px;
-  }
-  .player-header__descr{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .player-nav{
-    width: 100%;
-    justify-content: space-between;
-  }
-  .descr_wrapper {
-    width: 100%;
-  }
-  .player-nav__list{
-    display: none;
-  }
-
-  .player-header__descr {
-    padding-top: 20px;
-  }
-  .descr__title {
-    font-size: 35px;
-  }
-  .descr__text {
-    max-width: 200px;
-  }
-  .descr__img{
-    height: auto;
-    position: relative;
-  }
-  .descr__img-iPhone{
-    max-width: 220px;
-    right: 0;
-    left: auto;
-    top:0;
-    bottom: 0;
-    object-fit: cover;
-  }
-    .nav-btn{
-    position: relative;
-    display: block;
-    border: none;
-    background: transparent;
-    width: 40px;
-    height: 26px;
-    z-index: 10;
-    cursor: pointer;
-    right: 0;
-    left:auto;
-  }
-  .nav-btn::before,
-  .nav-btn::after {
-    content: '';
-    left: 0;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 10px;
-    background: #fff;
-  }
-  .nav-btn::before {
-    top: 0;
-    box-shadow: 0 11px 0 #fff;
-  }
-  .nav-btn::after {
-    bottom: 0;
-  }
-  .player-nav__list{
-    background-color:#E4542A;
-    display: flex;
-    flex-direction: column;
-    padding-top: 3%;
-    padding-left: 3%;
-    position: absolute;
-    top:0;
-    left:auto;
-    height: 100vh;
-    overflow: hidden;
-    width: 70%;
-    z-index: 11;
-    right: -100%;
-    transition: right 1s;
-  }
-  .player-nav__list>.player-nav__item>.player-nav__link{
-    font-size: 2em;
-  }
-  .player-nav__list--open{
-    right: 0%;
-    transition: right 1s;
-  }
-
-  }
-
-
-    /* Секция Music */
-  /*.page__wrapper {
-    height: auto;
-    }
-  .music-content {
-    height: auto;
-  }
-  .music__descr {
-    gap: 10px;
-  } 
-  .music__link {
-
-    font-size: 12px;
-  }
-  .music__button {
-    max-width: 100px;
-    max-height: 35px;
-}
-  .music-img {
-    max-width: 400px;
-    max-height: auto;
-    height: auto;
-}*/
-    /* Секция Store */
-/* Секция Store */
-
-@media only screen and (min-width:349px){
-
-}
