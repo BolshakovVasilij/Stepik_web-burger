@@ -11,39 +11,49 @@
 <body>
 <!--header-->
   <header class="page-header">
-    <nav class="navigation">
-      <a href="#">
-        <img class="logo" src="icon/logo.png" alt="img">
-        </img>
-      </a>
-      <ul class="navigation_list">
-        <li>
-          <a class="navigation_title_main" href="#">Главная</a>
-        </li>
-        <li>
-          <a class="navigation_title_main" href="#">Акции</a>
-        </li>
-        <li>
-          <a class="navigation_title_main" href="#">О нас</a>
-        </li>
-      </ul>
-      <button class="navigation_button" type="button">
-        <img src="icon/basket_img.png" alt="cart" class="navigation_button-img">
-      </button>
-
-    </nav>
     <div class="container-page-header">
-      <ul class="header__list">
-        <li>
-          <p class="text__header">Быстрая доставка для Вас</p>
-        </li>
-        <li>
-          <p class="text_header-discount">Сделай первый заказ и получи скидку 50%</p>
-        </li>
-        <li><button class="container_button-header" type="button">Заказать</button></li>
-      </ul>
-      <div class="burger-img">
-        <img src="img/burger-top.jpg" alt="burger" width="642" height="600 ">
+      <nav class="navigation">
+        <a class="logo" href="#">
+          <img class="logo-img" src="icon/logo.png" alt="img">
+          </img>
+        </a>
+        <input type="checkbox" id="burger-toggle"/>
+        <label class="menu-burger__container" for="burger-toggle">
+          <div class="menu-burger__btn">
+          </div>
+        </label>
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a class="navigation__title_main" href="#">Главная</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation__title_main" href="#">Акции</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation__title_main" href="#">О нас</a>
+          </li>
+        </ul>
+          <div class="navigation_button">
+            <button class="navigation_btn" type="button">
+              <img src="icon/basket_img.png" alt="cart" class="navigation_button-img">
+            </button>
+          </div>      
+      </nav>
+      <div class="header-order__wrapper">
+        <ul class="header__list">
+          <li>
+            <p class="text__header">Быстрая доставка для Вас</p>
+          </li>
+          <li>
+            <p class="text_header-discount">Сделай первый заказ и получи скидку 50%</p>
+          </li>
+          <li class="container_button-header">
+            <button class="order_btn" type="button"> Заказать</button>
+          </li>
+        </ul>
+        <div class="burger-wrapper">
+          <img class="burger-img" src="img/burger-top.jpg" alt="burger" width="642" height="600">
+        </div>
       </div>
     </div>
   </header>
@@ -82,44 +92,52 @@
   </main>
 <!--page-footer-->
   <footer class="page-footer">
-    <ul class="footer__list">
-      <li class="footer__item">
-        <a href="#" class="item__link">
+<div class="footer-burger__wrapper">
+    <ul class="footer-burger__list">
+      <li class="footer-burger__item">
+        <a class="footer-burger__link" href="#" >
           Программа лояльности
         </a>
       </li>
-      <li class="footer__item">
-        <a href="#" class="item__link">
-          Политика конфиденциальности
-        </a>
+      <li class="footer-burger__item">
+        <ul class="footer__text">
+          <li>
+            <a class="footer-burger__link" href="#" >
+            Политика конфиденциальности
+          </a>
+          </li>
+          <ul class="footer-burger__list-inner">
+            <li class="list-inner__item">
+              <p class="text__title">ООО «Vintage Food»</p>
+            </li>
+            <li class="item__link">
+              <p class="text__author">© Все права защищены</p>
+            </li>
+            <li class="item__social">
+              <ul class="social__list">
+                <li>
+                  <a href="#" class="social__link"><img class="social__img" src="icon/VK Circled.png" alt="" width="50" height="50"></a>
+                </li>
+                <li>
+                  <a href="#" class="social__link"><img class="social__img" src="icon/Telegram.png" alt="" width="50" height="50"></a>
+                </li>
+              </ul>          
+            </li>
+            <li class="item__link">
+              <a href="project_player/project_player.html" class="project_player">
+                <button class="player_button" type="button">К второму проекту</button>
+              </a>
+            </li>
+          </ul>
+        </ul>
       </li>
-      <li class="footer__item">
-        <a href="#" class="item__link">
+      <li class="footer-burger__item">
+        <a class="footer-burger__link" href="#" >
           Договор оферты
         </a>
       </li>
     </ul>
-    <ul class="footer__text">
-      <li>
-        <p class="text__title">ООО «Vintage Food»</p>
-      </li>
-      <li>
-        <p class="text__title">© Все права защищены</p>
-      </li>
-    </ul>
-    <ul class="footer__social">
-      <li>
-        <a href="#" class="social__img"><img src="icon/VK Circled.png" alt="" width="50" height="50"></a>
-      </li>
-      <li>
-        <a href="#" class="social__img"><img src="icon/Telegram.png" alt="" width="60" height="60"></a>
-      </li>
-      <li>
-        <a href="project_player/project_player.html" class="project_player">
-          <button class="player_button" type="button">К второму проекту</button>
-        </a>
-      </li>
-    </ul>
+</div>
   </footer>
 </body>
 

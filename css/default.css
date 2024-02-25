@@ -2,11 +2,12 @@ html {
   --container: 1440px;
   --padding-container: 15px;
   box-sizing: border-box;
+  font-size: 16px;
   /*position: relative;
-  overflow-x: hidden; */
+  overflow-x: hidden;*/
 }
 *, *:before, *:after {
-box-sizing:inherit;
+box-sizing:border-box;
 padding: 0;
 margin: 0;
 border: 0;
