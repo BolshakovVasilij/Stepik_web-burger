@@ -4,8 +4,13 @@
     right: 0;
     transform:translateX(0px);
 }
-
-}
+  .store__descr-img--max {
+    display: block;
+  }
+  .store__descr-img--min{
+  display: none;
+  }
+  }
 
 @media only screen and (max-width:1440px){
   /* Burger */
@@ -51,8 +56,15 @@
   .music__descr{
     justify-content: flex-start;
   }
+  .store__descr-img--max {
+    display: block;
 }
- /* Burger-header */
+  .store__descr-img--min{
+    display: none;
+}
+
+}
+
 @media only screen and (max-width:1432px) {
   .container-page-header {
     padding: 3rem 6rem;
@@ -157,7 +169,12 @@
     font-weight: 400;
     line-height: normal;
 }
-
+  .store__descr-img--max {
+    display: block;
+}
+.store__descr-img--min{
+  display: none;
+}
   /*FOOTER*/
   .footer__container{
     max-height: 536px;
@@ -261,7 +278,6 @@
   .footer-burger__list {
     padding: 2rem 2rem;
   }
-}
   .store__descr-img--max {
   display: none;
 }
